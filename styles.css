@@ -1,0 +1,129 @@
+body {
+    background-color: #283149;
+    text-align: center;
+    font-family: "Arvo", cursive;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #DBEDF3;
+    text-shadow: 3px 0 #DA0463;
+    margin-top: 1rem;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+}
+
+.container > :nth-child(2) {
+    display: grid;
+    width: 30%;
+    height: 90%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    background-color: #DBEDF3;
+}
+
+.container > :nth-child(2) > div {
+    background-color: #283149;
+    border: none;
+}
+  
+.o-symbol {
+    background-image: url(./assets/images/o-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 90%;
+    border: none;
+}
+
+.x-symbol {
+    background-image: url(./assets/images/unnamed.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 90%;
+    border: none;
+}
+
+/* players design */
+.player {
+    display: flex;
+    background-color: white;
+    font-size: 1.5rem;
+    color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4.5px;
+    gap: 10px;
+}
+
+.player > :nth-child(1) {
+    height: 50px;
+    width: 50px;
+}
+
+.player-symbol-o {
+    background-image: url(./assets/images/o-symbol.png);
+    background-color: #0c0e00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 80%;
+}
+
+.player-symbol-x {
+    background-image: url(./assets/images/unnamed.png);
+    background-color: #0c0e00;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 80%;
+}
+
+.green {
+    background-color: rgb(32, 180, 18);
+    color: white;
+}
+
+.flickerbgimg {
+    background-image: none;
+}
+
+.flicker {
+    visibility: hidden;
+}
+
+/* Making responsive */
+@media(max-width:750px) {
+
+    body {
+        padding: 2rem;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .container > :nth-child(2) {
+        order: 1;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .player {
+        width: 100%;
+        justify-content: left;
+        font-size: 1.6rem;
+    }
+
+}
