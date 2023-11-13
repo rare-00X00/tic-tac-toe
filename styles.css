@@ -42,10 +42,10 @@ h1 {
 }
 
 .x-symbol {
-    background-image: url(./assets/images/unnamed.png);
+    background-image: url(./assets/images/x-symbol.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80% 90%;
+    background-size: 95% 95%;
     border: none;
 }
 
@@ -64,22 +64,7 @@ h1 {
 .player > :nth-child(1) {
     height: 50px;
     width: 50px;
-}
-
-.player-symbol-o {
-    background-image: url(./assets/images/o-symbol.png);
-    background-color: #0c0e00;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80% 80%;
-}
-
-.player-symbol-x {
-    background-image: url(./assets/images/unnamed.png);
-    background-color: #0c0e00;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80% 80%;
+    background-color: black;
 }
 
 .green {
@@ -87,7 +72,7 @@ h1 {
     color: white;
 }
 
-.flickerbgimg {
+.flicker-bg-img {
     background-image: none;
 }
 
